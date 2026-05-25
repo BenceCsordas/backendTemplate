@@ -55,15 +55,3 @@ app.listen(88, err => console.log(err ? err : "server on 88"))
 
 ```
 
-
-```
-useEffect(()=>{
-        async function getKategoriak(){
-            let resp = await fetch(http://localhost:8000/api/categories)
-            let json = await resp.json()
-            console.log(json)
-            setKategoria(json)
-        }
-        getKategoriak()
-    },[])
-```
