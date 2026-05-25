@@ -14,6 +14,18 @@ let con = await mysql.createConnection({
     password: ""
 });
 
+async function getValami(...){
+    try{
+    let sql = "..."
+    let [ adat ] = await con.execute(sql, [])
+    res.send(adat)
+     } catch (error) {
+        console.log(error)
+        res.status(500).send({msg:"Adatbázis hiba!"})
+    }
+}
+
+app.get("/api/...", getValami)
 app.listen(88, err => console.log(err ? err : "server on 88"))
 ```
 
