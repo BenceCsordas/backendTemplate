@@ -27,7 +27,6 @@ app.listen(88, err => console.log(err ? err : "server on 88"))
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js"
-    
   },
   "keywords": [],
   "author": "",
@@ -36,8 +35,10 @@ app.listen(88, err => console.log(err ? err : "server on 88"))
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1",
-    "mysql2": "^3.22.3"
+    "mysql2": "^3.22.3",
+    "nodemon": "^3.1.14"
   }
 }
+
 
 ```
